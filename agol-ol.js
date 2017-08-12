@@ -395,9 +395,11 @@ function createWebMap(mapDivId, itemId, extentLayerName) {
 		map.on('click', e => {
 			// remove all existing feature info tables
 			removeElementsByClass('info');
+
+			let mapDiv = document.getElementById('map');
+			let x = mapDiv.offsetLeft + e.pixel[0];
+			let y = mapDiv.offsetTop + e.pixel[1];
 			let infoId = 0;
-			let x = e.pixel[0];
-			let y = e.pixel[1];
 
 			// query features
 			map.forEachFeatureAtPixel(e.pixel, function(feature, layer) {

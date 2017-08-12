@@ -214,7 +214,7 @@ function createStyleFromEsriDrawingInfo(drawingInfo) {
 
 // create a feature from an ESRI feature
 function createFeatureFromEsriFeature(geomType, data) {
-	var feature;
+	let feature;
 	// for now, only supports points, polylines, and polygons
 	switch(geomType) {
 		case 'esriGeometryPoint':

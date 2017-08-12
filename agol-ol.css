@@ -1,0 +1,42 @@
+/* vim: set ts=2 sw=2: */
+html, body, #map {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+h1 {
+	font-size: 20pt;
+}
+.info {
+	font-size: 8pt;
+	background-color: white;
+	overflow: hidden;
+}
+.titlebar {
+	border: 1px solid #999999;
+	border-bottom: none;
+}
+.close {
+	float: right;
+}
+
+table {
+	border-collapse: collapse;
+}
+table th {
+	text-align: left;
+	border: 1px solid #999999;
+	padding: 3px;
+	background-color: #eeeeee;
+}
+table td {
+	border: 1px solid #999999;
+	padding: 3px;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}

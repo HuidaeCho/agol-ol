@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- vim: set ts=2 sw=2: -->
+<html>
+	<head>
+		<title>ArcGIS Online (AGOL) Web Map using OpenLayers</title>
+		<!-- CSS for OpenLayers 4.2.0 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.2.0/ol.css" type="text/css">
+		<!-- my CSS -->
+		<link rel="stylesheet" href="agol-ol.css" type="text/css">
+		<!-- OpenLayers 4.2.0 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.2.0/ol.js" type="text/javascript"></script>
+		<!-- my JavaScript code -->
+		<script src="agol-ol.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>ArcGIS Online (AGOL) Web Map using OpenLayers</h1>
+		Author: <a href="https://idea.isnew.info">Huidae Cho</a>,
+		Date: August 12, 2017,
+		OpenLayers Version: 4.2.0,
+		AGOL Web Map: <a href="http://www.arcgis.com/home/item.html?id=b528fdc8b48e40ad925225387966f523">North Carolina Sample Dataset for GRASS GIS<a>
+		<div id="map" class="map"></div>
+		<script type="text/javascript">
+			// create a web map
+			createWebMap(
+				// div ID for the map
+				'map',
+				// portal item ID of my web map
+				'b528fdc8b48e40ad925225387966f523',
+				// extent layer name
+				'firestations');
+		</script>
+	</body>
+</html>

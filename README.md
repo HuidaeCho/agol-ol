@@ -11,7 +11,35 @@ and identify feature attributes.
 createWebMap(mapDivId, itemId, extentLayerName);
 ```
 
+# HTML example
+
+```
+<html>
+  <head>
+    <title>ArcGIS Online (AGOL) Web Map using OpenLayers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.2.0/ol.css" type="text/css">
+    <link rel="stylesheet" href="agol-ol.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.2.0/ol.js" type="text/javascript"></script>
+    <script src="agol-ol.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      // create a web map
+      createWebMap(
+        // div ID for the map
+        'map',
+        // portal item ID of my web map
+        'b528fdc8b48e40ad925225387966f523',
+        // extent layer name
+        'firestations');
+    </script>
+  </body>
+</html>
+```
+
 # License
+
 Copyright (C) 2017, Huidae Cho <https://idea.isnew.info>
 
 This program is free software: you can redistribute it and/or modify it

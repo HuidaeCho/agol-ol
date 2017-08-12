@@ -11,7 +11,7 @@ and identify feature attributes.
 createWebMap(mapDivId, itemId, extentLayerName);
 ```
 
-# HTML example
+# HTML Example
 
 ```
 <html>

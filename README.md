@@ -2,8 +2,7 @@
 
 I wrote this JavaScript code to display one of my web maps hosted on ArcGIS
 Online (AGOL). I did not put much time and effort to polish this code, so it is
-just good enough to display [this map]
-(http://www.arcgis.com/home/item.html?id=b528fdc8b48e40ad925225387966f523)
+just good enough to display [this map](http://www.arcgis.com/home/item.html?id=b528fdc8b48e40ad925225387966f523)
 and identify feature attributes.
 
 # Usage

@@ -406,7 +406,8 @@ function createWebMap(mapDivId, itemId, extentLayerName) {
 				let attr = feature.get('attributes');
 				// start a attribute table
 				infoId++;
-				let infoText = '<div class="titlebar">' + layer.get('title') +
+				let infoText = '<div class="titlebar"><span class="title">' +
+					layer.get('title') + '</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
 					'<a class="close" href="#" title="Click to close" ' +
 					'onclick="removeElementById(' + infoId +
 					'); return false;">Close</a></div>' +

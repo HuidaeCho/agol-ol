@@ -35,9 +35,6 @@ function message(message) {
 	console.log(message);
 }
 
-// portal item ID of my web map
-let itemId = 'b528fdc8b48e40ad925225387966f523';
-
 // [r, g, b, a] (0-255) => [r, g, b (0-255), a (0-1)]
 function createColorFromEsriColor(color) {
 	return color.slice(0, 3).concat(color[3] / 255);
@@ -281,7 +278,7 @@ function removeElementById(id) {
 // create a web map using an AGOL portal item ID
 function createWebMap(mapDivId, itemId, extentLayerName) {
 	// URL for AGOL REST resources
-	let dataUrl = 'http://www.arcgis.com/sharing/rest/content/items/' + itemId +
+	let dataUrl = 'https://www.arcgis.com/sharing/rest/content/items/' + itemId +
 		'/data';
 
 	// fetch and process the web map JSON data

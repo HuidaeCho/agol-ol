@@ -40,7 +40,7 @@ createWebMap(mapDivId, itemId, extentLayerName);
 
 # License
 
-Copyright (C) 2017, Huidae Cho <https://idea.isnew.info/>
+Copyright (C) 2017, Huidae Cho <<https://idea.isnew.info/>>
 
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the Free
